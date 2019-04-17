@@ -1,0 +1,10 @@
+src
+example
+.idea
+test
+.eslintrc.js
+.prettierrc.js
+.travis.yml
+jest.config.js
+stryker.conf.js
+tsconfig.json

@@ -1,0 +1,62 @@
+// Color Scheme Palette
+// https://coolors.co/61dafb-a31621-fcf7f8-ced3dc-4e8098
+
+$color-react: rgba(97, 218, 251, 1);
+$color-primary: rgba(78, 128, 152, 1);
+$color-secondary: rgba(206, 211, 220, 1);
+$color-background: rgba(252, 247, 248, 1);
+$color-accent: rgba(163, 22, 33, 1);
+
+body {
+  background: $color-background;
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.app {
+  border: 1px solid $color-secondary;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.4em;
+  margin: 0 0 15px 0;
+}
+
+.terminal {
+  margin-bottom: 10px;
+}
+
+.flag {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: $color-react;
+  vertical-align: middle;
+
+  &--active {
+    background: $color-accent;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: $color-secondary;
+  border: 1px solid $color-primary;
+  outline: none;
+}
+
+.buttons button:active {
+  border-color: lighten($color-primary, 10);
+  background: lighten($color-secondary, 10);
+}
